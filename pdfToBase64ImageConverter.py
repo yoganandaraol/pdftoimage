@@ -24,9 +24,3 @@ def pdf_page_to_base64(pdf_path, page_number):
     img_str = base64.b64encode(buffered.getvalue()).decode("utf-8")
     
     return img_str
-
-# Example usage:
-pdf_path = "123.pdf"
-page_number = 8  # Page number to convert
-base64_image = pdf_page_to_base64(pdf_path, page_number)
-print(base64_image)  # This will print the base64 encoded string of the image
